@@ -30,7 +30,7 @@ pipeline {
                 script{
                     docker.withRegistry('', 'DockerHubCred') {
                     sh 'docker tag calculator pranjalgawande/calculator:latest'
-                    sh 'docker push pranjalgawande/calculator'
+                    sh 'docker push pranjalgawande/calculator:latest'
                     }
                  }
             }
